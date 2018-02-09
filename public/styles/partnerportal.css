@@ -1,7 +1,233 @@
+html {
+    font-family: "Lato", "Lucida Grande", "Lucida Sans Unicode", Tahoma, Sans-Serif;
+    line-height: 1.5;
+    font-size: 24px;
+    font-weight: 400;
+}
+
 article, aside, dialog, figcaption, figure, footer, header, hgroup, legend, main, nav, section {
     display: block;
 }
 
 .img-secondary-purple {
     background-color: #3C0555;
+}
+
+/* header styles */
+.header-wrapper {
+    height: 50px;
+    color: #fff;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    border: 0;
+    border-radius: 0;
+}
+
+.header-content-wrapper {
+    padding: 10px 0;
+}
+
+.header-content-wrapper ul {
+    list-style: none;
+    float: left;
+    padding: 0;
+}
+
+.header-content-wrapper ul li {
+    float: left;
+}
+
+.header-content-wrapper ul li i {
+    color: #fff;
+    margin-right: 20px;
+}
+
+/* sidebar styles */
+#sidebar-toggle-switch:hover {
+    cursor: pointer;
+}
+
+.search-wrapper {
+    margin-top: -2px;
+}
+
+.search-wrapper .input-group {
+    margin-right: 50px;
+    width: 400px;
+}
+
+.pp-banner-img {
+    height: 32px;
+    padding: 2px;
+    margin-top: -2px;
+}
+
+#sidebar-toggle-switch {    
+    color: #fff;
+    padding: 10px;
+}
+
+.sidebar-wrapper {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    bottom: 0;
+    width: 220px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    background-color: #fff;
+    color: #fff;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    overflow-x: hidden;
+    overflow-y: auto;
+    transition: all 0.5s ease;
+    z-index: 1000;
+}
+
+.sidebar-wrapper-collapsed {
+    left: -220px;
+    box-shadow: unset;
+}
+
+.sidebar-wrapper .nav-list {
+    list-style: none;
+    padding:0;    
+}
+
+.sidebar-wrapper .nav-list > .nav-item:first-child {
+    border-top: 1px solid #eee;
+}
+
+.sidebar-wrapper .nav-list > .nav-item {
+    padding: 10px 20px;
+    border-bottom: 1px solid #eee;
+}
+
+.sidebar-wrapper .nav-list > .nav-item > a:hover {
+    cursor: pointer;
+    text-decoration: none;
+    color: #B71A8B;
+}
+
+.sidebar-wrapper .nav-list > .nav-item.active > a {
+    color: #B71A8B;
+}
+
+.sidebar-wrapper .nav-list > .nav-item > a {
+    color: #3c3c3c;
+}
+
+.sidebar-wrapper .nav-list > .nav-item > a > .caret {
+    float: right;
+    margin-top: 7px;
+}
+
+.sidebar-wrapper .nav-list > .nav-item > a > i {
+    margin-right: 10px;
+}
+
+.sidebar-wrapper .nav-list > .dropdown.nav-item > .nav-dropdown-menu.collapsed {    
+    display: none;
+}
+
+/* sub menus */
+.sidebar-wrapper .nav-dropdown-menu {
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease;
+}
+
+.sidebar-wrapper .nav-dropdown-menu {
+    list-style: none;
+    padding: 10px 10px 0 10px;
+}
+
+.sidebar-wrapper .nav-dropdown-menu > .nav-item:first-child {
+    border-top: 1px solid #eee;
+}
+
+.sidebar-wrapper .nav-dropdown-menu > .nav-item {
+    padding-top: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+
+.sidebar-wrapper .nav-dropdown-menu > .nav-item > a:hover {
+    cursor: pointer;
+    text-decoration: none;
+    color: #B71A8B;
+}
+
+.sidebar-wrapper .nav-dropdown-menu > .nav-item.active > a {
+    color: #B71A8B;
+}
+
+.sidebar-wrapper .nav-dropdown-menu > .nav-item > a {
+    color: #3c3c3c;
+}
+
+.sidebar-wrapper .nav-dropdown-menu > .nav-item > a > i {
+    margin-right: 10px;
+}
+
+/* content styles */
+.content-wrapper {
+    position: absolute;
+    top: 50px;
+    left: 220px;
+    right: 0;
+    bottom: 0;
+    background-color: #f1f1f1;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    overflow-x: hidden;
+    overflow-y: auto;
+    transition: all 0.5s ease;
+    z-index: 999;
+}
+
+.content-wrapper-collapsed {
+    left: 0;    
+}
+
+/* media queries */
+
+/* just under an ipad portrait */
+@media screen and (max-width:767px){
+    .sidebar-wrapper {
+        left: -220px;
+        box-shadow: unset;
+    } 
+
+    .sidebar-wrapper-collapsed {
+        left: 0;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    }
+
+    .content-wrapper {
+        left: 0;    
+    }
+
+    .header-content-wrapper .right-options-wrapper {
+        float: right;
+    }
+
+    .header-content-wrapper .right-options-wrapper li i {
+        margin-right: 0;
+        margin-left: 20px;
+    }
+
+    .search-wrapper .input-group {
+        width: 350px;
+    }
+}
+
+/* up to ipad portrait */
+@media screen and (max-width:768px){
+    .pp-banner-img-wrapper {
+        width: 45px;
+        overflow: hidden;
+    }
 }

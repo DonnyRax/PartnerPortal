@@ -1,0 +1,12 @@
+.btn {
+    border-radius: 0;
+}
+
+.btn-primary, .btn-primary:hover, .btn-primary:focus {
+    background-color: #B71A8B;
+    border-color: #B71A8B;
+}
+
+.form-control, .dropdown-menu {
+    border-radius: 0;
+}
