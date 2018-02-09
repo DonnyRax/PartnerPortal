@@ -178,7 +178,7 @@ article, aside, dialog, figcaption, figure, footer, header, hgroup, legend, main
     left: 220px;
     right: 0;
     bottom: 0;
-    background-color: #f1f1f1;
+    background-color: #f0f0f0;
     -moz-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
     -webkit-transition: all 0.5s ease;
@@ -190,6 +190,15 @@ article, aside, dialog, figcaption, figure, footer, header, hgroup, legend, main
 
 .content-wrapper-collapsed {
     left: 0;    
+}
+
+.header-bar {
+    width: 100%;
+    background-color: #BEBEBE;
+    padding: 10px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 24px;    
 }
 
 /* media queries */
