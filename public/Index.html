@@ -14,30 +14,37 @@
   <body>
     <div class="wrapper">
       <!-- header -->        
-      <div class="header-wrapper img-secondary-purple">
+      <div class="header-wrapper">
         <div class="container-fluid">
           <div class="header-content-wrapper">
             <ul class="menu-wrapper">
-                <li><span id="sidebar-toggle-switch"><i class="fa fa-2x fa-bars"></i></span></li>
-                <li><div class="pp-banner-img-wrapper"><img class="pp-banner-img hidden-xs" src="/images/imagination-logo.png" alt="img-logo" /></div></li>
+              <li><span id="sidebar-toggle-switch"><i class="fa fa-2x fa-bars"></i></span></li>
+              <li><div class="pp-banner-img-wrapper"><img class="pp-banner-img hidden-xs" src="/images/imagination-logo.png" alt="img-logo" /></div></li>
+            </ul>
+            <ul id="create-ticket-wrapper" class="hidden-xs hidden-sm">
+                <li><button id="create-ticket" type="button" class="btn btn-primary btn-sm">Create Ticket</button></li>
             </ul>
             <ul class="right-options-wrapper navbar-right">
-                <li><a href="#"><i class="fa fa-2x fa-comment"></i></a></li>
-                <li><a href="#"><i class="fa fa-2x fa-sign-out"></i></a></li>
+              <li><a href="#"><i class="fa fa-2x fa-edit visible-xs visible-sm"></i></a></li>
+              <li><a href="#"><i class="fa fa-2x fa-comment"></i></a></li>
+              <li><a href="#"><i class="fa fa-2x fa-sign-out"></i></a></li>
             </ul>
             <ul class="search-wrapper navbar-right hidden-xs">
-                <li>
-                    <div class="input-group">
-                        <input type="text" class="form-control" aria-label="..." placeholder="Enter record Id">
-                        <div class="input-group-btn">
-                            <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span id="search-option-text">Ticket</span> <span class="caret"></span></button>
-                          <ul class="dropdown-menu">
-                            <li><a href="#">Ticket</a></li>
-                            <li><a href="#">IP Package</a></li>
-                            <li><a href="#">Deliverable</a></li>
-                          </ul>
-                        </div><!-- /btn-group -->
-                      </div><!-- /input-group -->
+              <li>
+                <div class="input-group">
+                    <div class="input-group-btn">
+                        <button type="button" class="btn btn-primary btn-sm dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span id="search-option-text">Ticket</span> <span class="caret"></span></button>
+                      <ul class="dropdown-menu">
+                        <li><a href="#">Ticket</a></li>
+                        <li><a href="#">IP Package</a></li>
+                        <li><a href="#">Deliverable</a></li>
+                      </ul>
+                    </div><!-- /btn-group -->
+                    <input type="text" class="form-control input-sm" aria-label="..." placeholder="Enter record Id">
+                    <div class="input-group-btn">
+                      <button type="button" class="btn btn-primary btn-sm">Go</button>
+                    </div>
+                  </div><!-- /input-group -->
                 </li>
             </ul>
           </div>          
@@ -46,8 +53,12 @@
       <!-- header end -->
       <!-- side bar -->
       <div class="sidebar-wrapper">
+          <div class="user-welcome">
+            <div>Welcome to Partner Portal</div>
+            <div>PP User</div>
+          </div>
           <ul class="nav-list">
-              <li class="nav-item active"><a href=""><i class="fa fa-home"></i>Home</a></li>
+              <li class="nav-item active"><a href=""><i class="fa fa-home"></i>Dashboard</a></li>
               <li class="nav-item"><a href=""><i class="fa fa-ticket"></i>Tickets</a></li>
               <li class="nav-item"><a href=""><i class="fa fa-cogs"></i>IP Packages</a></li>
               <li class="nav-item"><a href=""><i class="fa fa-globe"></i>Partners</a></li>
@@ -73,7 +84,7 @@
                     <li class="nav-item"><a href=""><i class="fa fa-exclamation-circle"></i>Error Logs</a></li>
                   </ul>
               </li>
-            </ul>      
+            </ul>            
       </div>
       <!-- sidebar end -->
       <!-- content -->
@@ -84,75 +95,171 @@
                     <h2 class="page-header">Dashboard</h2>
                 </div>
             </div>
-              <div class="row">
-              <div class="col-md-4">
-                  <div class="panel panel-img">
-                      <div class="panel-heading">
-                          <div class="row">
-                              <div class="col-xs-3">
-                                  <i class="fa fa-ticket fa-5x"></i>
-                              </div>
-                              <div class="col-xs-9 text-right">
-                                  <div class="huge">26</div>
-                                  <div class="summary-info-description">My Tickets</div>
-                              </div>
-                          </div>
-                      </div>
-                      <a href="#">
-                          <div class="panel-footer">
-                              <span class="pull-left">Go to Tickets</span>
-                              <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
-                              <div class="clearfix"></div>
-                          </div>
-                      </a>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="panel panel-img">
+                        <div class="panel-heading">
+                            <div class="row">
+                                <div class="col-xs-3">
+                                    <i class="fa fa-ticket fa-5x"></i>
+                                </div>
+                                <div class="col-xs-9 text-right">
+                                    <div class="huge">26</div>
+                                    <div class="summary-info-description">My Tickets</div>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="#">
+                            <div class="panel-footer">
+                                <span class="pull-left">Go to Tickets</span>
+                                <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
+                                <div class="clearfix"></div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="panel panel-img">
+                        <div class="panel-heading">
+                            <div class="row">
+                                <div class="col-xs-3">
+                                    <i class="fa fa-files-o fa-5x"></i>
+                                </div>
+                                <div class="col-xs-9 text-right">
+                                    <div class="huge">12</div>
+                                    <div>My Projects</div>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="#">
+                            <div class="panel-footer">
+                                <span class="pull-left">Go to My Projects</span>
+                                <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
+                                <div class="clearfix"></div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="panel panel-img">
+                        <div class="panel-heading">
+                            <div class="row">
+                                <div class="col-xs-3">
+                                    <i class="fa fa-cogs fa-5x"></i>
+                                </div>
+                                <div class="col-xs-9 text-right">
+                                    <div class="huge">8</div>
+                                    <div>Packages</div>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="#">
+                            <div class="panel-footer">
+                                <span class="pull-left">Go to Packages</span>
+                                <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
+                                <div class="clearfix"></div>
+                            </div>
+                        </a>
+                    </div>
+                </div>              
+            </div>
+            <div class="row">
+              <div class="col-md-8">
+                <div class="panel panel-img">
+                  <div class="panel-heading"><h2>My Tickets</h2></div>
+                  <div class="panel-body">
+                      <table class="table table-hover"> 
+                        <thead> 
+                          <tr> 
+                            <th>Ticket Id</th> 
+                            <th>Title</th> 
+                            <th>State</th> 
+                            <th>Priority</th> 
+                            <th>Waiting On</th> 
+                          </tr> 
+                        </thead> 
+                        <tbody> 
+                          <tr> 
+                            <th scope="row">1</th> <td>Ticket 1</td> <td>Open</td> <td>Low</td> <td>IMG</td> 
+                          </tr> 
+                          <tr> 
+                            <th scope="row">2</th> <td>Ticket 2</td> <td>Assigned</td> <td>Low</td> <td>IMG</td> 
+                          </tr> 
+                          <tr> 
+                            <th scope="row">3</th> <td>Ticket 3</td> <td>Assigned</td> <td>Low</td> <td>Customer</td> 
+                          </tr> 
+                          <tr> 
+                            <th scope="row">4</th> <td>Ticket 4</td> <td>Open</td> <td>Low</td> <td>IMG</td> 
+                          </tr> 
+                          <tr> 
+                            <th scope="row">5</th> <td>Ticket 5</td> <td>Open</td> <td>Low</td> <td>IMG</td> 
+                          </tr> 
+                          <tr> 
+                            <th scope="row">6</th> <td>Ticket 6</td> <td>Assigned</td> <td>Low</td> <td>IMG</td> 
+                          </tr> 
+                          <tr> 
+                            <th scope="row">7</th> <td>Ticket 7</td> <td>Assigned</td> <td>Low</td> <td>Customer</td> 
+                          </tr> 
+                          <tr> 
+                            <th scope="row">8</th> <td>Ticket 8</td> <td>Open</td> <td>Low</td> <td>IMG</td> 
+                          </tr> 
+                        </tbody> 
+                      </table>
                   </div>
               </div>
-              <div class="col-md-4">
-                  <div class="panel panel-img">
-                      <div class="panel-heading">
-                          <div class="row">
-                              <div class="col-xs-3">
-                                  <i class="fa fa-files-o fa-5x"></i>
+            </div>
+            <div class="col-md-4">
+                <div id="activity-panel" class="panel panel-img">
+                    <div class="panel-heading"><h2>Activity</h2></div>
+                    <div class="panel-body">
+                        <ul class="list-unstyled timeline widget">
+                            <li>
+                              <div class="block">
+                                <div class="block_content">
+                                  <h2 class="title"><a>Ticket 5 has a new update</a></h2>
+                                  <div class="byline"><span>1 hour ago</span> by <a>Jane Smith</a></div>
+                                </div>
                               </div>
-                              <div class="col-xs-9 text-right">
-                                  <div class="huge">12</div>
-                                  <div>My Projects</div>
+                            </li>
+                            <li>
+                              <div class="block">
+                                <div class="block_content">
+                                  <h2 class="title"><a>New deliverable uploaded</a></h2>
+                                  <div class="byline"><span>2 hours ago</span> by <a>Anon a mous</a></div>
+                                </div>
                               </div>
-                          </div>
-                      </div>
-                      <a href="#">
-                          <div class="panel-footer">
-                              <span class="pull-left">Go to My Projects</span>
-                              <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
-                              <div class="clearfix"></div>
-                          </div>
-                      </a>
-                  </div>
-              </div>
-              <div class="col-md-4">
-                  <div class="panel panel-img">
-                      <div class="panel-heading">
-                          <div class="row">
-                              <div class="col-xs-3">
-                                  <i class="fa fa-cogs fa-5x"></i>
-                              </div>
-                              <div class="col-xs-9 text-right">
-                                  <div class="huge">8</div>
-                                  <div>Packages</div>
-                              </div>
-                          </div>
-                      </div>
-                      <a href="#">
-                          <div class="panel-footer">
-                              <span class="pull-left">Go to Packages</span>
-                              <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
-                              <div class="clearfix"></div>
-                          </div>
-                      </a>
-                  </div>
-              </div>              
-          </div>
+                            </li>
+                            <li>
+                              <div class="block">
+                                  <div class="block_content">
+                                    <h2 class="title"><a>Ticket 9 was closed</a></h2>
+                                    <div class="byline"><span>5 hours ago</span> by <a>Anon a mous</a></div>
+                                  </div>
+                                </div>
+                              </li>
+                              <li>
+                              <div class="block">
+                                  <div class="block_content">
+                                    <h2 class="title"><a>Ticket 9 was updated</a></h2>
+                                    <div class="byline"><span>5 hours ago</span> by <a>Anon a mous</a></div>
+                                  </div>
+                                </div>
+                              </li>
+                              <li>
+                                  <div class="block">
+                                      <div class="block_content">
+                                        <h2 class="title"><a>Package Apple DDK was Published</a></h2>
+                                        <div class="byline"><span>6 hours ago</span> by <a>Anon a mous</a></div>
+                                      </div>
+                                    </div>
+                              </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
+        </div>
+        <footer class="img-copyright footer small text-center">© Imagination Technologies Limited. All rights reserved.</footer>
       </div>
       <!-- content end -->
     </div>
