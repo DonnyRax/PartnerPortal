@@ -68,8 +68,8 @@
             </div>
           </div>
           <ul class="nav-list">
-              <li class="nav-item active"><a href="Index.html"><i class="fa fa-home"></i>Dashboard</a></li>
-              <li class="nav-item"><a href="Tickets.html"><i class="fa fa-ticket"></i>Tickets</a></li>
+              <li class="nav-item"><a href="Index.html"><i class="fa fa-home"></i>Dashboard</a></li>
+              <li class="nav-item active"><a href="Tickets.html"><i class="fa fa-ticket"></i>Tickets</a></li>
               <li class="nav-item"><a href=""><i class="fa fa-cogs"></i>IP Packages</a></li>
               <li class="nav-item"><a href=""><i class="fa fa-globe"></i>Partners</a></li>
               <li class="nav-item"><a href=""><i class="fa fa-files-o"></i>Projects</a></li>
@@ -102,80 +102,28 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-lg-12">
-                    <h2 class="page-header">Dashboard</h2>
+                    <h2 class="page-header">Tickets</h2>
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-4">
-                    <div class="panel panel-img">
-                        <div class="panel-heading">
-                            <div class="row">
-                                <div class="col-xs-3">
-                                    <i class="fa fa-ticket fa-5x"></i>
-                                </div>
-                                <div class="col-xs-9 text-right">
-                                    <div class="huge">26</div>
-                                    <div class="summary-info-description">My Tickets</div>
-                                </div>
-                            </div>
-                        </div>
-                        <a href="#">
-                            <div class="panel-footer">
-                                <span class="pull-left">Go to Tickets</span>
-                                <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
-                                <div class="clearfix"></div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="panel panel-img">
-                        <div class="panel-heading">
-                            <div class="row">
-                                <div class="col-xs-3">
-                                    <i class="fa fa-files-o fa-5x"></i>
-                                </div>
-                                <div class="col-xs-9 text-right">
-                                    <div class="huge">12</div>
-                                    <div>My Projects</div>
-                                </div>
-                            </div>
-                        </div>
-                        <a href="#">
-                            <div class="panel-footer">
-                                <span class="pull-left">Go to My Projects</span>
-                                <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
-                                <div class="clearfix"></div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="panel panel-img">
-                        <div class="panel-heading">
-                            <div class="row">
-                                <div class="col-xs-3">
-                                    <i class="fa fa-cogs fa-5x"></i>
-                                </div>
-                                <div class="col-xs-9 text-right">
-                                    <div class="huge">8</div>
-                                    <div>Packages</div>
-                                </div>
-                            </div>
-                        </div>
-                        <a href="#">
-                            <div class="panel-footer">
-                                <span class="pull-left">Go to Packages</span>
-                                <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
-                                <div class="clearfix"></div>
-                            </div>
-                        </a>
-                    </div>
-                </div>              
-            </div>
-            <div class="row">
-              <div class="col-md-8">
-                <div id="my-tickets-panel" class="panel panel-img">
+              <div class="col-md-10">
+                <div id="tickets-options">
+                    <ul class="nav nav-pills hidden-xs">
+                            <li role="presentation" class="active"><a href="#">My Tickets</a></li>
+                            <li role="presentation"><a href="#">Open Tickets</a></li>
+                            <li role="presentation"><a href="#">Shared Tickets</a></li>
+                            <li role="presentation"><a href="#">All Tickets</a></li>
+                            <li role="presentation"><a href="#">Escalations</a></li>
+                        </ul>
+                        <select class="form-control visible-xs">
+                            <option>My Tickets</option>
+                            <option>Open Tickets</option>
+                            <option>Shared Tickets</option>
+                            <option>All Tickets</option>
+                            <option>Escalations</option>
+                        </select>
+                </div>  
+                <div id="tickets-panel" class="panel panel-img">
                   <div class="panel-heading"><h2>My Tickets</h2></div>
                   <div class="panel-body">
                       <table class="table table-hover"> 
@@ -218,51 +166,37 @@
                   </div>
               </div>
             </div>
-            <div class="col-md-4">
-                <div id="activity-panel" class="panel panel-img">
-                    <div class="panel-heading"><h2>Activity</h2></div>
+            <div class="col-md-2">
+                <div class="panel panel-img actions-panel">
+                    <div class="panel-heading"><h2>Search Notes</h2></div>
                     <div class="panel-body">
-                        <ul class="list-unstyled timeline widget">
-                            <li>
-                              <div class="block">
-                                <div class="block_content">
-                                  <h2 class="title"><a>Ticket 5 has a new update</a></h2>
-                                  <div class="byline"><span>1 hour ago</span> by <a>Jane Smith</a></div>
-                                </div>
-                              </div>
+                        <div class="input-group">
+                            <input type="text" class="form-control input-sm" aria-label="..." placeholder="Search">
+                            <div class="input-group-btn">
+                                <button type="button" class="btn btn-primary btn-sm">Go</button>
+                            </div>
+                        </div><!-- /input-group -->
+                    </div>
+                </div>
+                <div class="panel panel-img actions-panel">
+                    <div class="panel-heading"><h2>Actions</h2></div>
+                    <div class="panel-body">
+                        <ul class="list-unstyled">
+                            <li class="action-item">
+                                <i class="fa fa-columns"></i> <a>Select Columns</a>
                             </li>
-                            <li>
-                              <div class="block">
-                                <div class="block_content">
-                                  <h2 class="title"><a>New deliverable uploaded</a></h2>
-                                  <div class="byline"><span>2 hours ago</span> by <a>Anon a mous</a></div>
-                                </div>
-                              </div>
+                            <li class="action-item">
+                                <i class="fa fa-save"></i> <a>Save View</a>
                             </li>
-                            <li>
-                              <div class="block">
-                                  <div class="block_content">
-                                    <h2 class="title"><a>Ticket 9 was closed</a></h2>
-                                    <div class="byline"><span>5 hours ago</span> by <a>Anon a mous</a></div>
-                                  </div>
-                                </div>
-                              </li>
-                              <li>
-                              <div class="block">
-                                  <div class="block_content">
-                                    <h2 class="title"><a>Ticket 9 was updated</a></h2>
-                                    <div class="byline"><span>5 hours ago</span> by <a>Anon a mous</a></div>
-                                  </div>
-                                </div>
-                              </li>
-                              <li>
-                                  <div class="block">
-                                      <div class="block_content">
-                                        <h2 class="title"><a>Package Apple DDK was Published</a></h2>
-                                        <div class="byline"><span>6 hours ago</span> by <a>Anon a mous</a></div>
-                                      </div>
-                                    </div>
-                              </li>
+                            <li class="action-item">
+                                <i class="fa fa-trash"></i> <a>Delete View</a>
+                            </li>
+                            <li class="action-item">
+                                    <i class="fa fa-share-alt"></i> <a>Share View</a>
+                            </li>
+                            <li class="action-item">
+                                <i class="fa fa-file-excel-o"></i> <a>Export to Excel</a>
+                            </li>
                         </ul>
                     </div>
                 </div>
