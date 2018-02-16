@@ -226,10 +226,6 @@ article, aside, dialog, figcaption, figure, footer, header, hgroup, legend, main
     padding: 10px 10px 0 10px;
 }
 
-.sidebar-wrapper .nav-dropdown-menu > .nav-item {
-    padding: 10px 0;
-}
-
 .sidebar-wrapper .nav-dropdown-menu > .nav-item:last-child {
     border-bottom: 0;
 }
