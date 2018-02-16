@@ -94,10 +94,50 @@ article, aside, dialog, figcaption, figure, footer, header, hgroup, legend, main
     padding: 10px;
 }
 
-.sidebar-wrapper .user-welcome{
+.sidebar-wrapper .user-wrapper{
     color: #650f4d;
-    text-align: center;
-    padding: 20px;
+}
+
+.sidebar-wrapper .user-details-wrapper {
+    position: relative;
+    padding: 10px;
+}
+
+.sidebar-wrapper .user-details-left {
+    position: relative;
+    display: table-cell;
+    vertical-align: top;
+    padding-right: 10px;
+}
+
+.sidebar-wrapper .user-avatar img {
+    width: 36px !important;
+    height: 36px !important;
+    border-radius: 2px;
+    vertical-align: middle;
+}
+
+.sidebar-wrapper .user-details-right {
+    position: relative;
+    display: table-cell;
+    vertical-align: top;
+}
+
+.sidebar-wrapper .user-heading {
+    margin-bottom: 2px;
+    display: block;
+}
+
+.sidebar-wrapper .text-semibold {
+    font-weight: 500;
+}
+
+.sidebar-wrapper .text-size-mini {
+    font-size: 11px;
+}
+
+.sidebar-wrapper .text-muted {
+    color: #999;
 }
 
 .sidebar-wrapper {
