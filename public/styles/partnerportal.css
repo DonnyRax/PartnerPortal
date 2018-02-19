@@ -473,6 +473,7 @@ ul.timeline .byline, .main_menu .fa {
         box-shadow: unset;
         overflow-y: scroll;
         -webkit-overflow-scrolling: touch;
+        -ms-overflow-style: -ms-autohiding-scrollbar;
     } 
 
     .sidebar-wrapper-collapsed {
@@ -505,4 +506,17 @@ ul.timeline .byline, .main_menu .fa {
     .page-header {
         font-size: 20px;
     }
+
+    #sidebar-search {
+        margin-bottom: 10px;
+    }
+
+    #sidebar-search .input-group-addon {
+        border-left:0;
+    }
+
+    #sidebar-search input {
+        border-right:0;
+    }
+
 }
