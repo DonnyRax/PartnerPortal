@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="/styles/partnerportal.css">
+    <link rel="stylesheet" href="/styles/bootstrap-overrides.css">
+    <title>Dashboard</title>
+  </head>
+  <body>
+    <div class="wrapper">
+        <!-- header -->        
+        <div class="header-wrapper">
+            <div class="container-fluid">
+                <div class="header-content-wrapper">
+                <ul class="menu-wrapper">
+                    <li><span id="sidebar-toggle-switch"><i class="fa fa-2x fa-bars"></i></span></li>
+                    <li><div class="pp-banner-img-wrapper">
+                    <img src="https://www.imgtec.com/wp-content/themes/imgtec/dist/images/Imagination_Logo.svg" class="sitelogo hidden-xs" alt="Imagination Technologies" title="Imagination Technologies">
+                    </div></li>
+                </ul>
+                <ul id="create-ticket-wrapper" class="hidden-xs hidden-sm">
+                    <li><a id="create-ticket" href="CreateTicket.html" class="btn btn-primary btn-sm">Create Ticket</a></li>
+                </ul>
+                <ul class="right-options-wrapper navbar-right">
+                    <li><a href="CreateTicket.html"><i class="fa fa-2x fa-edit visible-xs visible-sm"></i></a></li>
+                    <li><a href="#"><i class="fa fa-2x fa-comment"></i></a></li>
+                    <li><a href="#"><i class="fa fa-2x fa-sign-out"></i></a></li>
+                </ul>
+                <ul class="search-wrapper navbar-right hidden-xs">
+                    <li>
+                    <div class="input-group">
+                        <div class="input-group-btn">
+                            <button type="button" class="btn btn-primary btn-sm dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span id="search-option-text">Ticket</span> <span class="caret"></span></button>
+                            <ul class="dropdown-menu">
+                            <li><a href="#">Ticket</a></li>
+                            <li><a href="#">IP Package</a></li>
+                            <li><a href="#">Deliverable</a></li>
+                            </ul>
+                        </div><!-- /btn-group -->
+                        <input type="text" class="form-control input-sm" aria-label="..." placeholder="Enter record Id">
+                        <div class="input-group-btn">
+                            <button type="button" class="btn btn-primary btn-sm">Go</button>
+                        </div>
+                        </div><!-- /input-group -->
+                    </li>
+                </ul>
+                </div>          
+            </div>        
+            </div>
+            <!-- header end -->
+      <!-- side bar -->
+      <div class="sidebar-wrapper">
+          <div class="user-wrapper">            
+            <div class="user-details-wrapper">
+              <div class="user-details-left">
+                <div class="user-avatar">
+                  <!-- <img src="/images/GenericUser.png" alt="user" /> -->
+                  <img src="/images/overlay_rock.jpg" alt="user" />
+                </div>
+              </div>
+              <div class="user-details-right">
+                  <span class="user-heading text-semibold">Welcome Lautaro</span>
+                  <div class="text-size-mini text-muted">Imagination Technologies</div>
+              </div>
+            </div>
+          </div>
+          <ul class="nav-list menu-list">
+              <li class="nav-item"><a href="Index.html"><i class="fa fa-home"></i>Dashboard</a></li>
+              <li class="nav-item"><a href="Tickets.html"><i class="fa fa-ticket"></i>Tickets</a></li>
+              <li class="nav-item active"><a href="Components.html"><i class="fa fa-cogs"></i>IP Packages</a></li>
+              <li class="nav-item"><a href="Partners.html"><i class="fa fa-globe"></i>Partners</a></li>
+              <li class="nav-item"><a href=""><i class="fa fa-files-o"></i>Projects</a></li>
+              <li class="dropdown nav-item">
+                  <a class="nav-dropdown-toggle"><i class="fa fa-line-chart"></i>Reports <b class="caret"></b></a>
+                  <ul class="nav-dropdown-menu menu-list collapsed">
+                    <li class="nav-item"><a href=""><i class="fa fa-area-chart"></i>My Reports</a></li>
+                    <li class="nav-item"><a href=""><i class="fa fa-pie-chart"></i>Global Activity</a></li>
+                    <li class="nav-item"><a href=""><i class="fa fa-line-chart"></i>Partner Activity</a></li>
+                    <li class="nav-item"><a href=""><i class="fa fa-bar-chart"></i>Project Activity</a></li>
+                    <li class="nav-item"><a href=""><i class="fa fa-download"></i>Partner Downloads</a></li>
+                  </ul>
+              </li>
+              <li class="dropdown nav-item">
+                  <a class="nav-dropdown-toggle"><i class="fa fa-book"></i>Admin <b class="caret"></b></a>
+                  <ul class="nav-dropdown-menu menu-list collapsed">
+                    <li class="nav-item"><a href=""><i class="fa fa-building"></i>Company Types</a></li>
+                    <li class="nav-item"><a href=""><i class="fa fa-desktop"></i>System Codes</a></li>
+                    <li class="nav-item"><a href=""><i class="fa fa-desktop"></i>System Processes</a></li>
+                    <li class="nav-item"><a href=""><i class="fa fa-desktop"></i>System Actions</a></li>
+                    <li class="nav-item"><a href=""><i class="fa fa-pencil-square-o"></i>Manage Reports</a></li>
+                    <li class="nav-item"><a href=""><i class="fa fa-exclamation-circle"></i>Error Logs</a></li>
+                  </ul>
+              </li>
+            </ul>            
+      </div>
+      <!-- sidebar end -->
+      <!-- content -->
+      <div class="content-wrapper">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2 class="page-header">IP Packages</h2>
+                </div>
+            </div>
+            <div class="row">
+              <div class="col-md-10">
+                  <div class="row">
+                      <div class="col-md-3">
+                        <img src="/images/treeview.png" alt="" />
+                      </div>
+                      <div class="col-md-9">
+                        <div id="tickets-panel" class="panel panel-img">
+                            <div class="panel-body">
+                                <div class="table-responsive">
+                                <table class="table table-hover"> 
+                                        <thead> 
+                                        <tr> 
+                                            <th>Package Id</th> 
+                                            <th>Name</th> 
+                                            <th>Version</th> 
+                                            <th>State</th> 
+                                        </tr> 
+                                        </thead> 
+                                        <tbody> 
+                                        <tr> 
+                                            <th scope="row">1</th> <td>MBX D3DM/OGLES DDK for WinCE</td> <td>RC3</td> <td>Low</td>
+                                        </tr> 
+                                        <tr> 
+                                            <th scope="row">2</th> <td>PDP WinCE DDK - Intel Specific</td> <td>1.4</td> <td>Low</td>
+                                        </tr> 
+                                        <tr> 
+                                            <th scope="row">3</th> <td>MBX D3DM/OGLES SDK for WinCE v1.6</td> <td>1.0 Alpha 1</td> <td>Low</td>
+                                        </tr> 
+                                        <tr> 
+                                            <th scope="row">4</th> <td>MBX-Lite v1.5</td> <td>Open</td> <td>RC 3</td>
+                                        </tr> 
+                                        <tr> 
+                                            <th scope="row">5</th> <td>MVED1</td> <td>Open</td> <td>3.2 RC1</td>
+                                        </tr> 
+                                        <tr> 
+                                            <th scope="row">6</th> <td>	VGP v1.5 Synthesis Trial Module</td> <td>3.2 RC1</td> <td>Low</td>
+                                        </tr> 
+                                        <tr> 
+                                            <th scope="row">7</th> <td>MBX OGLES DDK for Linux</td> <td>Assigned</td> <td>1.1 ED0281.05</td>
+                                        </tr> 
+                                        <tr> 
+                                            <th scope="row">8</th> <td>	MBX OGLES SDK & BP for Linux v1.8</td> <td>Open</td> <td>2.2 Pre-release 1.01</td>
+                                        </tr> 
+                                        </tbody> 
+                                    </table>
+                                </div>
+                            </div>  
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="panel panel-img actions-panel">
+                    <div class="panel-heading"><h2>Search Deliverables</h2></div>
+                    <div class="panel-body">
+                        <div id="ticket-search-notes" class="input-group">
+                            <span class="input-group-addon"><i class="fa fa-search"></i></span>
+                            <input type="text" class="form-control input-sm" aria-label="..." placeholder="Search">
+                        </div><!-- /input-group -->
+                    </div>
+                </div>
+                <div class="panel panel-img actions-panel">
+                    <div class="panel-heading"><h2>Actions</h2></div>
+                    <div class="panel-body">
+                        <button class="btn btn-primary full-width">Create IP Package</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        <footer class="img-copyright footer small text-center">© Imagination Technologies Limited. All rights reserved.</footer>
+      </div>
+      <!-- content end -->
+    </div>
+
+    <!-- Optional JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>    
+    <script src="https://use.fontawesome.com/0320119476.js"></script>
+    <script src="/scripts/partnerportal.js" type="text/javascript"></script>
+  </body>
+</html>

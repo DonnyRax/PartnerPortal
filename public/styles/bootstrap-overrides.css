@@ -10,3 +10,8 @@
 .form-control, .dropdown-menu {
     border-radius: 0;
 }
+
+.form-control:focus {
+    border-color: #bdc7d0;
+    box-shadow: none;
+}

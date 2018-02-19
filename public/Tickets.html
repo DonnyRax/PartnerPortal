@@ -15,44 +15,44 @@
     <div class="wrapper">
       <!-- header -->        
       <div class="header-wrapper">
-        <div class="container-fluid">
-          <div class="header-content-wrapper">
-            <ul class="menu-wrapper">
-              <li><span id="sidebar-toggle-switch"><i class="fa fa-2x fa-bars"></i></span></li>
-              <li><div class="pp-banner-img-wrapper">
-                <img src="https://www.imgtec.com/wp-content/themes/imgtec/dist/images/Imagination_Logo.svg" class="sitelogo" alt="Imagination Technologies" title="Imagination Technologies">
+          <div class="container-fluid">
+            <div class="header-content-wrapper">
+              <ul class="menu-wrapper">
+                <li><span id="sidebar-toggle-switch"><i class="fa fa-2x fa-bars"></i></span></li>
+                <li><div class="pp-banner-img-wrapper">
+                  <img src="https://www.imgtec.com/wp-content/themes/imgtec/dist/images/Imagination_Logo.svg" class="sitelogo hidden-xs" alt="Imagination Technologies" title="Imagination Technologies">
                 </div></li>
-            </ul>
-            <ul id="create-ticket-wrapper" class="hidden-xs hidden-sm">
-                <li><button id="create-ticket" type="button" class="btn btn-primary btn-sm">Create Ticket</button></li>
-            </ul>
-            <ul class="right-options-wrapper navbar-right">
-              <li><a href="#"><i class="fa fa-2x fa-edit visible-xs visible-sm"></i></a></li>
-              <li><a href="#"><i class="fa fa-2x fa-comment"></i></a></li>
-              <li><a href="#"><i class="fa fa-2x fa-sign-out"></i></a></li>
-            </ul>
-            <ul class="search-wrapper navbar-right hidden-xs">
-              <li>
-                <div class="input-group">
-                    <div class="input-group-btn">
-                        <button type="button" class="btn btn-primary btn-sm dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span id="search-option-text">Ticket</span> <span class="caret"></span></button>
-                      <ul class="dropdown-menu">
-                        <li><a href="#">Ticket</a></li>
-                        <li><a href="#">IP Package</a></li>
-                        <li><a href="#">Deliverable</a></li>
-                      </ul>
-                    </div><!-- /btn-group -->
-                    <input type="text" class="form-control input-sm" aria-label="..." placeholder="Enter record Id">
-                    <div class="input-group-btn">
-                      <button type="button" class="btn btn-primary btn-sm">Go</button>
-                    </div>
-                  </div><!-- /input-group -->
-                </li>
-            </ul>
-          </div>          
-        </div>        
-      </div>
-      <!-- header end -->
+              </ul>
+              <ul id="create-ticket-wrapper" class="hidden-xs hidden-sm">
+                  <li><a id="create-ticket" href="CreateTicket.html" class="btn btn-primary btn-sm">Create Ticket</a></li>
+              </ul>
+              <ul class="right-options-wrapper navbar-right">
+                  <li><a href="CreateTicket.html"><i class="fa fa-2x fa-edit visible-xs visible-sm"></i></a></li>
+                <li><a href="#"><i class="fa fa-2x fa-comment"></i></a></li>
+                <li><a href="#"><i class="fa fa-2x fa-sign-out"></i></a></li>
+              </ul>
+              <ul class="search-wrapper navbar-right hidden-xs">
+                <li>
+                  <div class="input-group">
+                      <div class="input-group-btn">
+                          <button type="button" class="btn btn-primary btn-sm dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span id="search-option-text">Ticket</span> <span class="caret"></span></button>
+                        <ul class="dropdown-menu">
+                          <li><a href="#">Ticket</a></li>
+                          <li><a href="#">IP Package</a></li>
+                          <li><a href="#">Deliverable</a></li>
+                        </ul>
+                      </div><!-- /btn-group -->
+                      <input type="text" class="form-control input-sm" aria-label="..." placeholder="Enter record Id">
+                      <div class="input-group-btn">
+                        <button type="button" class="btn btn-primary btn-sm">Go</button>
+                      </div>
+                    </div><!-- /input-group -->
+                  </li>
+              </ul>
+            </div>          
+          </div>        
+        </div>
+        <!-- header end -->
       <!-- side bar -->
       <div class="sidebar-wrapper">
           <div class="user-wrapper">            
@@ -64,7 +64,7 @@
                 </div>
               </div>
               <div class="user-details-right">
-                  <span class="user-heading text-semibold">Lautaro J.Fernandez-Grandon</span>
+                  <span class="user-heading text-semibold">Welcome Lautaro</span>
                   <div class="text-size-mini text-muted">Imagination Technologies</div>
               </div>
             </div>
@@ -72,8 +72,8 @@
           <ul class="nav-list menu-list">
               <li class="nav-item"><a href="Index.html"><i class="fa fa-home"></i>Dashboard</a></li>
               <li class="nav-item active"><a href="Tickets.html"><i class="fa fa-ticket"></i>Tickets</a></li>
-              <li class="nav-item"><a href=""><i class="fa fa-cogs"></i>IP Packages</a></li>
-              <li class="nav-item"><a href=""><i class="fa fa-globe"></i>Partners</a></li>
+              <li class="nav-item"><a href="Components.html"><i class="fa fa-cogs"></i>IP Packages</a></li>
+              <li class="nav-item"><a href="Partners.html"><i class="fa fa-globe"></i>Partners</a></li>
               <li class="nav-item"><a href=""><i class="fa fa-files-o"></i>Projects</a></li>
               <li class="dropdown nav-item">
                   <a class="nav-dropdown-toggle"><i class="fa fa-line-chart"></i>Reports <b class="caret"></b></a>
@@ -128,6 +128,7 @@
                 <div id="tickets-panel" class="panel panel-img">
                   <div class="panel-heading"><h2>My Tickets</h2></div>
                   <div class="panel-body">
+                      <div class="table-responsive">
                       <table class="table table-hover"> 
                         <thead> 
                           <tr> 
@@ -165,6 +166,7 @@
                           </tr> 
                         </tbody> 
                       </table>
+                    </div>
                   </div>
               </div>
             </div>
@@ -172,12 +174,22 @@
                 <div class="panel panel-img actions-panel">
                     <div class="panel-heading"><h2>Search Notes</h2></div>
                     <div class="panel-body">
-                        <div class="input-group">
+                        <div id="ticket-search-notes" class="input-group">
+                            <span class="input-group-addon"><i class="fa fa-search"></i></span>
                             <input type="text" class="form-control input-sm" aria-label="..." placeholder="Search">
-                            <div class="input-group-btn">
-                                <button type="button" class="btn btn-primary btn-sm">Go</button>
-                            </div>
                         </div><!-- /input-group -->
+                    </div>
+                </div>
+                <div class="panel panel-img actions-panel">
+                    <div class="panel-heading"><h2>Saved Views</h2></div>
+                    <div class="panel-body">
+                        <select class="form-control">
+                            <option>View 1</option>
+                            <option>View 2</option>
+                            <option>View 3 (John Doe)</option>
+                            <option>View 4</option>
+                            <option>View 5</option>
+                        </select>
                     </div>
                 </div>
                 <div class="panel panel-img actions-panel">

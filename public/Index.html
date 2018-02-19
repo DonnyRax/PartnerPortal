@@ -24,10 +24,10 @@
               </div></li>
             </ul>
             <ul id="create-ticket-wrapper" class="hidden-xs hidden-sm">
-                <li><button id="create-ticket" type="button" class="btn btn-primary btn-sm">Create Ticket</button></li>
+                <li><a id="create-ticket" href="CreateTicket.html" class="btn btn-primary btn-sm">Create Ticket</a></li>
             </ul>
             <ul class="right-options-wrapper navbar-right">
-              <li><a href="#"><i class="fa fa-2x fa-edit visible-xs visible-sm"></i></a></li>
+                <li><a href="CreateTicket.html"><i class="fa fa-2x fa-edit visible-xs visible-sm"></i></a></li>
               <li><a href="#"><i class="fa fa-2x fa-comment"></i></a></li>
               <li><a href="#"><i class="fa fa-2x fa-sign-out"></i></a></li>
             </ul>
@@ -64,7 +64,7 @@
                 </div>
               </div>
               <div class="user-details-right">
-                  <span class="user-heading text-semibold">Lautaro J.Fernandez-Grandon</span>
+                  <span class="user-heading text-semibold">Welcome Lautaro</span>
                   <div class="text-size-mini text-muted">Imagination Technologies</div>
               </div>
             </div>
@@ -72,8 +72,8 @@
           <ul class="nav-list menu-list">
               <li class="nav-item active"><a href="Index.html"><i class="fa fa-home"></i>Dashboard</a></li>
               <li class="nav-item"><a href="Tickets.html"><i class="fa fa-ticket"></i>Tickets</a></li>
-              <li class="nav-item"><a href=""><i class="fa fa-cogs"></i>IP Packages</a></li>
-              <li class="nav-item"><a href=""><i class="fa fa-globe"></i>Partners</a></li>
+              <li class="nav-item"><a href="Components.html"><i class="fa fa-cogs"></i>IP Packages</a></li>
+              <li class="nav-item"><a href="Partners.html"><i class="fa fa-globe"></i>Partners</a></li>
               <li class="nav-item"><a href=""><i class="fa fa-files-o"></i>Projects</a></li>
               <li class="dropdown nav-item">
                   <a class="nav-dropdown-toggle"><i class="fa fa-line-chart"></i>Reports <b class="caret"></b></a>
@@ -101,7 +101,8 @@
       <!-- sidebar end -->
       <!-- content -->
       <div class="content-wrapper">
-        <div class="container-fluid">
+        <div id="main-content">
+        <div class="container-fluid">          
             <div class="row">
                 <div class="col-lg-12">
                     <h2 class="page-header">Dashboard</h2>
@@ -180,6 +181,7 @@
                 <div id="my-tickets-panel" class="panel panel-img">
                   <div class="panel-heading"><h2>My Tickets</h2></div>
                   <div class="panel-body">
+                    <div class="table-responsive">
                       <table class="table table-hover"> 
                         <thead> 
                           <tr> 
@@ -217,6 +219,7 @@
                           </tr> 
                         </tbody> 
                       </table>
+                    </div>
                   </div>
               </div>
             </div>
@@ -271,6 +274,7 @@
             </div>
         </div>
         </div>
+      </div>
         <footer class="img-copyright footer small text-center">© Imagination Technologies Limited. All rights reserved.</footer>
       </div>
       <!-- content end -->
