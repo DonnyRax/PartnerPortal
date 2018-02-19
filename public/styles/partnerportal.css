@@ -258,6 +258,7 @@ footer {
     overflow-y: auto;
     transition: all 0.5s ease;
     z-index: 999;
+    height: calc(100% - 50px);
 }
 
 .img-copyright {
