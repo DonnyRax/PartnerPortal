@@ -417,10 +417,6 @@ ul.timeline .byline, .main_menu .fa {
     border-left: 0;
 }
 
-.actions-panel .panel-body {
-    padding: 10px 0;
-}
-
 .actions-panel .panel-body .list-unstyled {
     margin-bottom: 0;
 }
@@ -455,10 +451,6 @@ ul.timeline .byline, .main_menu .fa {
 #tickets-options ul >li.active>a {
     color: #fff;
     background-color: #B71A8B;
-}
-
-#description-panel .panel-body, #tickets-details-panel .panel-body {
-    padding: 15px 0;
 }
 
 .create-ticket-actions .btn {
@@ -497,10 +489,6 @@ ul.timeline .byline, .main_menu .fa {
 
     #attachments-panel #select-attachments {
         width: 100%;
-    }
-
-    #attachments-panel .panel-body {
-        padding: 15px 0;
     }
 
     .page-header {
