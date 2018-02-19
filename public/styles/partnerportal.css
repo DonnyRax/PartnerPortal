@@ -279,7 +279,9 @@ footer {
 
 .page-header {
     padding-right: 15px;
-    padding-bottom: 9px;
+    padding-bottom: 9px; 
+    font-weight: 600;
+    color: #650f4d;
     margin: 20px 0;
     border-bottom: 1px solid #eee;
 }
