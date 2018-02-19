@@ -165,6 +165,7 @@ footer {
     -webkit-transition: all 0.5s ease;
     overflow-x: hidden;
     overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
     transition: all 0.5s ease;
     z-index: 1000;
 }
@@ -255,7 +256,8 @@ footer {
     -o-transition: all 0.5s ease;
     -webkit-transition: all 0.5s ease;
     overflow-x: hidden;
-    overflow-y: auto;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
     transition: all 0.5s ease;
     z-index: 999;
     height: calc(100% - 50px);
@@ -455,7 +457,7 @@ ul.timeline .byline, .main_menu .fa {
     background-color: #B71A8B;
 }
 
-#description-panel .panel-body {
+#description-panel .panel-body, #tickets-details-panel .panel-body {
     padding: 15px 0;
 }
 
@@ -469,6 +471,8 @@ ul.timeline .byline, .main_menu .fa {
     .sidebar-wrapper {
         left: -220px;
         box-shadow: unset;
+        overflow-y: scroll;
+        -webkit-overflow-scrolling: touch;
     } 
 
     .sidebar-wrapper-collapsed {
@@ -478,6 +482,8 @@ ul.timeline .byline, .main_menu .fa {
 
     .content-wrapper {
         left: 0;    
+        overflow-y: scroll;
+        -webkit-overflow-scrolling: touch;
     }
 
     .header-content-wrapper .right-options-wrapper {
@@ -494,5 +500,9 @@ ul.timeline .byline, .main_menu .fa {
 
     #attachments-panel .panel-body {
         padding: 15px 0;
+    }
+
+    .page-header {
+        font-size: 20px;
     }
 }
