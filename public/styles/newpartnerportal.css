@@ -22,12 +22,12 @@ html {
     box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
     border: 0;
     border-radius: 0;
-    background: linear-gradient(to bottom, #4f1455 0, #300b33 100%) repeat scroll 0 0 rgba(0,0,0,0);
+    background: linear-gradient(to bottom, #4f1455 0, #300b33 100%) repeat scroll 0 0 rgba(0,0,0,0);    
 }
 
 .header-wrapper .sitelogo {
-    width: 190px;
-    margin: -4px 0 0 0px;
+    width: 160px;
+    margin: -2px 0 0 0px;
 }
 
 .header-content-wrapper {
@@ -52,7 +52,7 @@ html {
 }
 
 .header-content-wrapper ul:not(.navbar-right) li {
-    margin-left: 20px;
+    margin-left: 10px;
 }
 
 .header-content-wrapper ul.navbar-right li {
@@ -84,7 +84,7 @@ footer {
 }
 
 #create-ticket-wrapper {
-    margin-left: 50px;
+    margin-left: 20px;
 }
 
 #sidebar-toggle-switch:hover {
@@ -108,7 +108,7 @@ footer {
 
 /* sidebar styles */
 .sidebar-wrapper .user-wrapper{
-    color: #650f4d;
+    color: #fff;
 }
 
 .sidebar-wrapper .user-details-wrapper {
@@ -156,9 +156,11 @@ footer {
     top: 50px;
     left: 0;    
     height: calc(100% - 50px);
-    width: 220px;
+    width: 250px;
     box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
-    background-color: #fff;
+    /* background-color: #fff; */
+    /* background-color: rgb(57, 17, 43);     */
+    background: linear-gradient(to top, #4f1455 0, #300b33 100%) repeat scroll 0 0 rgba(0,0,0,0);
     color: #fff;
     -moz-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
@@ -171,7 +173,7 @@ footer {
 }
 
 .sidebar-wrapper-collapsed {
-    left: -220px;
+    left: -250px;
     box-shadow: unset;
 }
 
@@ -180,34 +182,32 @@ footer {
     padding:0;    
 }
 
-.sidebar-wrapper .menu-list > .nav-item:first-child {
-    border-top: 1px solid #eee;
-}
 .sidebar-wrapper .menu-list > .nav-item {    
-    border-bottom: 1px solid #eee;
+    padding: 0 10px;
 }
 
 .sidebar-wrapper .menu-list > .nav-item:hover {
     cursor: pointer;
     text-decoration: none;
-    color: #B71A8B;
+    color: #fff;
 }
 
 .sidebar-wrapper .menu-list > .nav-item:hover > a {
     cursor: pointer;
     text-decoration: none;
-    color: #B71A8B;
+    color: #fff;
+    background-color: #650f4d;
 }
 
 .sidebar-wrapper .menu-list > .nav-item > a {
-    color: #3c3c3c;
-    font-weight: 600;
+    color: #fff;
+    font-weight: 500;
     font-size: 14px;
     display: block;
-    padding: 10px 20px;
+    padding: 10px 15px;
 }
 
-.sidebar-wrapper .menu-list > .nav-item.active {
+.sidebar-wrapper .menu-list > .nav-item.active > a {
     background-color: #650f4d;
 }
 
@@ -231,7 +231,7 @@ footer {
 /* sub menus */
 .sidebar-wrapper .nav-dropdown-menu {
     list-style: none;
-    padding: 10px 10px 0 10px;
+    padding: 0px 5px;
 }
 
 .sidebar-wrapper .nav-dropdown-menu > .nav-item:last-child {
@@ -249,14 +249,14 @@ footer {
 .content-wrapper {
     position: absolute;
     top: 50px;
-    left: 220px;
+    left: 250px;
     right: 0;
     background-color: #fff;
     -moz-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
     -webkit-transition: all 0.5s ease;
     overflow-x: hidden;
-    overflow-y: scroll;
+    overflow-y: auto;
     -webkit-overflow-scrolling: touch;
     transition: all 0.5s ease;
     z-index: 999;
@@ -461,7 +461,7 @@ ul.timeline .byline, .main_menu .fa {
 /* just under an ipad portrait */
 @media screen and (max-width:768px){
     .sidebar-wrapper {
-        left: -220px;
+        left: -250px;
         box-shadow: unset;
         overflow-y: scroll;
         -webkit-overflow-scrolling: touch;
